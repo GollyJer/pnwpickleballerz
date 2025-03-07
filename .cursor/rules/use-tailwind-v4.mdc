@@ -1,0 +1,9 @@
+---
+description: use tailwind v4
+globs: 
+alwaysApply: true
+---
+
+# Use Tailwind v4
+
+- When working with styling and css in this repo always use Tailwind V4.
