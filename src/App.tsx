@@ -1,19 +1,25 @@
 import "./App.css";
 import "./animations.css";
 import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Testimonials from "./components/Testimonials";
-import Schedule from "./components/Schedule";
+// Commented sections don't need these imports
+// import Features from "./components/Features";
+// import Testimonials from "./components/Testimonials";
+// import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
+// import ReclubInstructionsMarkdown from "./components/ReclubInstructionsMarkdown";
+import ReclubInstructions from "./components/ReclubInstructions";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
       {/* Main content */}
       <Hero />
-      {/* <Features /> */}
-      {/* <Testimonials /> */}
-      {/* <Schedule /> */}
+      {/* <Features />
+      <Testimonials />
+      <Schedule /> */}
+
+      {/* Tournament Setup Instructions */}
+      <ReclubInstructions />
 
       {/* Call to action section */}
       {/* <div className="py-20 bg-gradient-to-r from-emerald-800 to-emerald-900 text-white text-center">
@@ -22,8 +28,7 @@ function App() {
             Ready to join the fun?
           </h2>
           <p className="text-xl mb-10 max-w-2xl mx-auto text-emerald-100">
-            Become a member today and join our vibrant community of pickleball
-            enthusiasts!
+            Become a member today and join our vibrant community of pickleball enthusiasts!
           </p>
           <button className="px-8 py-4 bg-emerald-500 text-gray-900 text-lg font-bold rounded-lg shadow-[0_0_15px_rgba(52,211,153,0.5)] hover:bg-emerald-400 transition duration-300 transform hover:scale-105 hover:shadow-[0_0_25px_rgba(52,211,153,0.7)]">
             Sign Up Now
