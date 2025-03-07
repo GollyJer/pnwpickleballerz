@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="400"
+  height="200"
+  viewBox="0 0 400 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradients definitions -->
+  <defs>
+    <linearGradient
+      id="courtGradient"
+      x1="0"
+      y1="0"
+      x2="400"
+      y2="200"
+      gradientUnits="userSpaceOnUse">
+      <stop
+        offset="0%"
+        stop-color="#1E40AF" />
+      <stop
+        offset="100%"
+        stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Glow effect for lines -->
+    <filter
+      id="lineGlow"
+      x="-50%"
+      y="-50%"
+      width="200%"
+      height="200%">
+      <feGaussianBlur
+        stdDeviation="1"
+        result="blur" />
+      <feComposite
+        in="SourceGraphic"
+        in2="blur"
+        operator="over" />
+    </filter>
+
+    <!-- Stronger glow for net -->
+    <filter
+      id="netGlow"
+      x="-50%"
+      y="-50%"
+      width="200%"
+      height="200%">
+      <feGaussianBlur
+        stdDeviation="2"
+        result="blur" />
+      <feComposite
+        in="SourceGraphic"
+        in2="blur"
+        operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Court background -->
+  <rect
+    width="400"
+    height="200"
+    fill="url(#courtGradient)"
+    stroke="#1E3A8A"
+    stroke-width="3"
+    rx="6" />
+
+  <!-- Court lines with glow -->
+  <line
+    x1="200"
+    y1="0"
+    x2="200"
+    y2="200"
+    stroke="#F0F9FF"
+    stroke-width="1.5"
+    stroke-opacity="0.7"
+    filter="url(#lineGlow)" />
+  <line
+    x1="0"
+    y1="100"
+    x2="400"
+    y2="100"
+    stroke="#F0F9FF"
+    stroke-width="1.5"
+    stroke-opacity="0.7"
+    filter="url(#lineGlow)" />
+
+  <!-- Kitchen lines (non-volley zones) -->
+  <line
+    x1="0"
+    y1="30"
+    x2="400"
+    y2="30"
+    stroke="#F0F9FF"
+    stroke-width="1.5"
+    stroke-opacity="0.7"
+    filter="url(#lineGlow)" />
+  <line
+    x1="0"
+    y1="170"
+    x2="400"
+    y2="170"
+    stroke="#F0F9FF"
+    stroke-width="1.5"
+    stroke-opacity="0.7"
+    filter="url(#lineGlow)" />
+
+  <!-- Sidelines with glow -->
+  <rect
+    x="4"
+    y="4"
+    width="392"
+    height="192"
+    stroke="#F0F9FF"
+    stroke-width="1.5"
+    stroke-opacity="0.8"
+    fill="none"
+    filter="url(#lineGlow)"
+    rx="4" />
+
+  <!-- Net with stronger glow -->
+  <line
+    x1="200"
+    y1="0"
+    x2="200"
+    y2="200"
+    stroke="#60A5FA"
+    stroke-width="3"
+    filter="url(#netGlow)" />
+
+  <!-- Kitchen zones with slight highlight -->
+  <rect
+    x="4"
+    y="4"
+    width="392"
+    height="26"
+    fill="#1E3A8A"
+    fill-opacity="0.3"
+    rx="2" />
+  <rect
+    x="4"
+    y="170"
+    width="392"
+    height="26"
+    fill="#1E3A8A"
+    fill-opacity="0.3"
+    rx="2" />
+</svg>
