@@ -1,0 +1,11 @@
+---
+description: Agents don't need to run servers or builds to test their code.
+globs: 
+alwaysApply: true
+---
+
+# Agent Rules
+
+- The human developer is running the server in real time and seeing your changes.
+- Do not run build commands to test code.
+- Do not run yarn dev, or other commands to launch a server to test code.
