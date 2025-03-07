@@ -17,7 +17,7 @@ export default function ReclubInstructions() {
 
         <div className="bg-gray-800 rounded-xl p-8 border border-gray-700 shadow-lg">
           <h3 className="text-2xl font-bold mb-6 text-emerald-400">
-            Create a Competition with Pool Play with Playoff bracket
+            Create a Competition with Pool Play and a Playoff Bracket
           </h3>
 
           <ol className="list-decimal pl-6 mb-8 space-y-2 text-gray-300 text-left">
