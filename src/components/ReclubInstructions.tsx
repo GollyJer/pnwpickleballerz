@@ -130,6 +130,29 @@ export default function ReclubInstructions() {
             <span className="text-emerald-300 font-bold">Confirm</span> button.
           </div>
 
+          <div className="bg-gray-700 rounded-md p-4 mb-8  text-blue-200 font-medium">
+            Press the{" "}
+            <span className="text-emerald-300 font-bold">
+              Publish Competition
+            </span>{" "}
+            button.
+          </div>
+
+          <h4 className="text-xl font-semibold mb-3 text-blue-300">
+            Confirm Publish
+          </h4>
+          <ol className="list-decimal pl-6 mb-8 space-y-2 text-gray-300 text-left">
+            <li>Review Guidelines {">"} Check "I agree"</li>
+            <li>Review Competition {">"} Check "Reviewed"</li>
+          </ol>
+          <div className="bg-gray-700 rounded-md p-4 mb-8  text-blue-200 font-medium">
+            Press the{" "}
+            <span className="text-emerald-300 font-bold">
+              Publish Competition
+            </span>{" "}
+            button.
+          </div>
+
           <div className="mb-8 p-4 border-l-4 border-emerald-500 bg-gray-800 text-gray-300 italic text-left">
             Ideally this would be the last step. Everyone in the club is
             notified and can sign up. Signups would automatically close once the
